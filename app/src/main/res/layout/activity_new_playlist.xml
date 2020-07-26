@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".NewPlaylist">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER PLAYLIST NAME"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/edname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Eg:-Rock,Sad,Romantic,etc."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btncreate"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edname"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:text="CREATE"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+</RelativeLayout>

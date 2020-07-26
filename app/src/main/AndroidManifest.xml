@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mymusicplayer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cover_art"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PlayerActivity3"
+            android:noHistory="true"
+            />
+        <activity android:name=".SongList1"
+            android:noHistory="true"
+            />
+        <activity android:name=".DisplayPlaylist"
+            />
+        <activity android:name=".SongList" />
+        <activity android:name=".ExistingPlaylist" />
+        <activity android:name=".NewPlaylist" />
+        <activity android:name=".CreatePlaylistHome" />
+        <activity android:name=".RecentPlayActivity" />
+        <activity android:name=".PlayerActivity2" />
+        <activity android:name=".MostPlayActivity" />
+        <activity
+            android:name=".PlayerActivity1"
+            android:noHistory="true" />
+        <activity
+            android:name=".FavouriteActivity"
+            android:noHistory="true" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".RatingActivity" />
+        <activity android:name=".PlayerActivity" />
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name" />
+        <activity android:name=".MainActivity1" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
